@@ -17,11 +17,22 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: #666666;
+  background: #E7E7E7;
+}
+
+.turntable-anime {
+  animation-name: turn;
+  animation-duration: 5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes turn {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(3600deg);
+  }
 }
